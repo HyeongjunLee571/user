@@ -1348,17 +1348,14 @@ localhost:8080/schedule/{userid}
 </details>
 
 ## ERD 1
-![ERD 1](https://d2sqqdb3t4xrq5.cloudfront.net/upload/EmaLDtDg9vgnFssgn/SDczcWRrUWdYakNSaFNDbllfc0FYdzlaOFpxcFBtWXhCSG0ucG5n)
+![ERD 1](https://erd-cloud.s3.amazonaws.com/upload/EmaLDtDg9vgnFssgn/aHdXQzN5QVlTdEpRcml5eXBfWm1kOW1mN294aFM2aW9hcXoucG5n)
 
 ## ERD 2
-![ERD 2](https://d2sqqdb3t4xrq5.cloudfront.net/upload/EmaLDtDg9vgnFssgn/SDczcWRrUWdYakNSaFNDbllfc0FYdzlaOFpxcFBtWXhCSG0ucG5n)
+![ERD 2](https://erd-cloud.s3.amazonaws.com/upload/EmaLDtDg9vgnFssgn/SFBlNjlyZTN6bkY2b3FRRHVfWm1kOW1mN294aFM2aW9hcXoucG5n)
 
 ## ERD 3
-![ERD 3](https://d2sqqdb3t4xrq5.cloudfront.net/upload/EmaLDtDg9vgnFssgn/SDczcWRrUWdYakNSaFNDbllfc0FYdzlaOFpxcFBtWXhCSG0ucG5n)
+![ERD 3](https://erd-cloud.s3.amazonaws.com/upload/EmaLDtDg9vgnFssgn/c0s1Z3VQeGpQR2t6YlRZS2JfWm1kOW1mN294aFM2aW9hcXoucG5n)
 
 ## ERD 7
-![ERD 7](https://d2sqqdb3t4xrq5.cloudfront.net/upload/EmaLDtDg9vgnFssgn/SDczcWRrUWdYakNSaFNDbllfc0FYdzlaOFpxcFBtWXhCSG0ucG5n)
-
-## ERD 8
-![ERD 8](https://d2sqqdb3t4xrq5.cloudfront.net/upload/EmaLDtDg9vgnFssgn/SDczcWRrUWdYakNSaFNDbllfc0FYdzlaOFpxcFBtWXhCSG0ucG5n)
+![ERD 7](https://erd-cloud.s3.amazonaws.com/upload/EmaLDtDg9vgnFssgn/enpjY21ua0dTdVdNQThEcGdfWm1kOW1mN294aFM2aW9hcXoucG5n)
 
