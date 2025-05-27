@@ -1348,14 +1348,14 @@ localhost:8080/schedule/{commentid}
 </details>
 
 ## ERD 1
-![ERD 1](https://erd-cloud.s3.amazonaws.com/upload/EmaLDtDg9vgnFssgn/aHdXQzN5QVlTdEpRcml5eXBfWm1kOW1mN294aFM2aW9hcXoucG5n)
+![Image](https://github.com/user-attachments/assets/f3665d2e-fdd0-4bc5-b1ec-d8773d9bf2c7)
 
 ## ERD 2
-![ERD 2](https://erd-cloud.s3.amazonaws.com/upload/EmaLDtDg9vgnFssgn/SFBlNjlyZTN6bkY2b3FRRHVfWm1kOW1mN294aFM2aW9hcXoucG5n)
+![Image](https://github.com/user-attachments/assets/797e0ef3-2f97-4ab4-a875-8a6df9f6b99e)
 
 ## ERD 3
-![ERD 3](https://erd-cloud.s3.amazonaws.com/upload/EmaLDtDg9vgnFssgn/c0s1Z3VQeGpQR2t6YlRZS2JfWm1kOW1mN294aFM2aW9hcXoucG5n)
+![Image](https://github.com/user-attachments/assets/33fbf917-513a-4974-b72d-34fb726d12ea)
 
 ## ERD 7
-![ERD 7](https://erd-cloud.s3.amazonaws.com/upload/EmaLDtDg9vgnFssgn/enpjY21ua0dTdVdNQThEcGdfWm1kOW1mN294aFM2aW9hcXoucG5n)
+![Image](https://github.com/user-attachments/assets/8d11836f-f87b-465d-87f5-0ec07a899c84)
 
