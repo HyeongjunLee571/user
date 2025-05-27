@@ -1348,7 +1348,7 @@ localhost:8080/schedule/{userid}
 </details>
 
 ## ERD 1
-![Image](https://erd-cloud.s3.amazonaws.com/upload/EmaLDtDg9vgnFssgn/aHdXQzN5QVlTdEpRcml5eXBfWm1kOW1mN294aFM2aW9hcXoucG5n)
+![Image]([https://erd-cloud.s3.amazonaws.com/upload/EmaLDtDg9vgnFssgn/aHdXQzN5QVlTdEpRcml5eXBfWm1kOW1mN294aFM2aW9hcXoucG5n](https://postfiles.pstatic.net/MjAyNTA1MTVfNzAg/MDAxNzQ3MjY3Njk4NzI3.nVOOjtzTKdb43axK2fOZAkT1nDMzzmzWhU-kUkIN7kEg.PO6Rj9xAaJlItFnwVWs3RtolQGZdaWEeiOWGln3i2cQg.PNG/123.PNG?type=w966))
 
 ## ERD 2
 ![Image](https://erd-cloud.s3.amazonaws.com/upload/EmaLDtDg9vgnFssgn/SFBlNjlyZTN6bkY2b3FRRHVfWm1kOW1mN294aFM2aW9hcXoucG5n)
