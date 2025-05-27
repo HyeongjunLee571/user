@@ -4,6 +4,7 @@ import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.example.jointhemembership.DTO.UserResponseDto;
 import org.example.jointhemembership.DTO.UsercheckResponseDto;
+import org.example.jointhemembership.Entity.Schedule;
 import org.example.jointhemembership.Entity.User;
 import org.example.jointhemembership.repository.Userrepository;
 import org.springframework.http.HttpStatus;
@@ -46,5 +47,26 @@ public class Userservice {
         }
 
         findUser.updatePassword(newPassword);
+    }
+
+    public void UserlongRequestDto(Long id,String email,String password) {
+
+        User findUser = userrepository.findByIdOrElseThrow(id);
+
+        if(!findUser.getEmail().equals(email)){
+            throw new ResponseStatusException(HttpStatus.UNAUTHORIZED,"이메일이 일치 하지 않습니다.");
+        }
+
+        if(!findUser.getPassword().equals(password)){
+            throw new ResponseStatusException(HttpStatus.UNAUTHORIZED,"비밀번호가 일치 하지 않습니다.");
+        }
+    }
+
+    public void UserDelete(Long id) {
+
+        User FindUser = userrepository.findByIdOrElseThrow(id);
+
+        userrepository.delete(FindUser);
+
     }
 }
