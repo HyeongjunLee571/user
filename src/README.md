@@ -6,7 +6,7 @@
 <!-- summary 아래 한칸 공백 두어야함 -->
 
 ## 00.개요<br>
-URL : /schedule<br>
+URL : /schedules<br>
 HTTP METHOD : POST<br>
 설명 : 일정을 생성하는 API 입니다.<br>
 
@@ -92,7 +92,7 @@ Content-type : application/json
 <!-- summary 아래 한칸 공백 두어야함 -->
 
 ## 00.개요<br>
-URL : /schedule/{userid}<br>
+URL : /schedules/{scheduleid}<br>
 HTTP METHOD : PUT<br>
 설명 : 일정 정보를 수정하는 API입니다.<br>
 
@@ -110,12 +110,12 @@ Content-type : application/json
 ## b. Param(파라미터 값이 필요한 경우)
 
 ### 1.설명
-| 키       | 데이터타입  | 설명 |
-|---------|--------|----|
-| userid  | int    | 유저 식별자 |
+| 키       | 데이터타입  | 설명     |
+|---------|--------|--------|
+| scheduleid  | int    | 일정 식별자 |
 
 ```json
-localhost:8080/schedule/{userid}
+localhost:8080/schedule/{scheduleid}
 ```
 
 ## c.body
@@ -186,7 +186,7 @@ localhost:8080/schedule/{userid}
 <!-- summary 아래 한칸 공백 두어야함 -->
 
 ## 00.개요<br>
-URL : /schedule/{userid}<br>
+URL : /schedules/{scheduleid}<br>
 HTTP METHOD : PATCH<br>
 설명 : 단일 일정 특정 정보를 수정하는 API입니다.<br>
 
@@ -204,12 +204,12 @@ Content-type : application/json
 ## b. Param(파라미터 값이 필요한 경우)
 
 ### 1.설명
-| 키       | 데이터타입  | 설명 |
-|---------|--------|----|
-| userid  | int    | 유저 식별자 |
+| 키       | 데이터타입  | 설명     |
+|---------|--------|--------|
+| scheduleid  | int    | 일정 식별자 |
 
 ```json
-localhost:8080/schedule/{userid}
+localhost:8080/schedule/{scheduleid}
 ```
 
 ## c.body
@@ -277,7 +277,7 @@ localhost:8080/schedule/{userid}
 <!-- summary 아래 한칸 공백 두어야함 -->
 
 ## 00.개요<br>
-URL : /schedule/{userid}<br>
+URL : /schedules/{userid}<br>
 HTTP METHOD : GET<br>
 설명 : 단일 일정 정보를 조회하는 API입니다.<br>
 
@@ -295,12 +295,12 @@ Content-type : application/json
 ## b. Param(파라미터 값이 필요한 경우)
 
 ### 1.설명
-| 키       | 데이터타입  | 설명 |
-|---------|--------|----|
-| userid  | int    | 유저 식별자 |
+| 키       | 데이터타입  | 설명     |
+|---------|--------|--------|
+| scheduleid  | int    | 일정 식별자 |
 
 ```json
-localhost:8080/schedule/{userid}
+localhost:8080/schedule/{scheduleid}
 ```
 
 ## c.body
@@ -367,7 +367,7 @@ localhost:8080/schedule/{userid}
 <!-- summary 아래 한칸 공백 두어야함 -->
 
 ## 00.개요<br>
-URL : /schedule<br>
+URL : /schedules<br>
 HTTP METHOD : GET<br>
 설명 : 일정 정보를 조회하는 API입니다.<br>
 
@@ -463,7 +463,7 @@ Content-type : application/json
 <!-- summary 아래 한칸 공백 두어야함 -->
 
 ## 00.개요<br>
-URL : /schedule/{userid}<br>
+URL : /schedules/{userid}<br>
 HTTP METHOD : DELETE<br>
 설명 : 단일 일정 정보를 삭제하는 API 입니다. <br>
 
@@ -481,12 +481,12 @@ Content-type : application/json
 ## b. Param(파라미터 값이 필요한 경우)
 
 ### 1.설명
-| 키       | 데이터타입  | 설명 |
-|---------|--------|----|
-| userid  | int    | 유저 식별자 |
+| 키       | 데이터타입  | 설명     |
+|---------|--------|--------|
+| scheduleid  | int    | 일정 식별자 |
 
 ```json
-localhost:8080/schedule/{userid}
+localhost:8080/schedule/{scheduleid}
 ```
 
 ## c.body
@@ -540,7 +540,7 @@ localhost:8080/schedule/{userid}
 <!-- summary 아래 한칸 공백 두어야함 -->
 
 ## 00.개요<br>
-URL : /user<br>
+URL : /users<br>
 HTTP METHOD : POST<br>
 설명 : 유저를 생성하는 API 입니다.<br>
 
@@ -618,7 +618,7 @@ Content-type : application/json
 <!-- summary 아래 한칸 공백 두어야함 -->
 
 ## 00.개요<br>
-URL : /user/{userid}<br>
+URL : /users/{userid}<br>
 HTTP METHOD : PATCH<br>
 설명 : 단일 유저 특정 정보를 수정하는 API입니다.<br>
 
@@ -692,7 +692,7 @@ localhost:8080/schedule/{userid}
 <!-- summary 아래 한칸 공백 두어야함 -->
 
 ## 00.개요<br>
-URL : /user/{userid}<br>
+URL : /users/{userid}<br>
 HTTP METHOD : GET<br>
 설명 : 단일 유저 정보를 조회하는 API입니다.<br>
 
@@ -771,14 +771,14 @@ localhost:8080/schedule/{userid}
 ```
 </details>
 <details>
-<summary>유저조회</summary>
+<summary>유저 전체조회</summary>
 
 <!-- summary 아래 한칸 공백 두어야함 -->
 
 ## 00.개요<br>
-URL : /user<br>
+URL : /users<br>
 HTTP METHOD : GET<br>
-설명 : 유저 정보를 조회하는 API입니다.<br>
+설명 : 유저 전체정보를 조회하는 API입니다.<br>
 
 
 ## 01.요청(Request)
@@ -863,7 +863,7 @@ Content-type : application/json
 <!-- summary 아래 한칸 공백 두어야함 -->
 
 ## 00.개요<br>
-URL : /user/{userid}<br>
+URL : /users/{userid}<br>
 HTTP METHOD : DELETE<br>
 설명 : 단일 유저 정보를 삭제하는 API 입니다. <br>
 
@@ -941,7 +941,7 @@ localhost:8080/schedule/{userid}
 <!-- summary 아래 한칸 공백 두어야함 -->
 
 ## 00.개요<br>
-URL : /commentid<br>
+URL : /commentids<br>
 HTTP METHOD : POST<br>
 설명 : 댓글를 생성하는 API 입니다.<br>
 
@@ -1017,7 +1017,7 @@ Content-type : application/json
 <!-- summary 아래 한칸 공백 두어야함 -->
 
 ## 00.개요<br>
-URL : /commentid/{commentidid}<br>
+URL : /commentids/{commentidid}<br>
 HTTP METHOD : PUT<br>
 설명 : 댓글 정보를 수정하는 API입니다.<br>
 
@@ -1035,12 +1035,12 @@ Content-type : application/json
 ## b. Param(파라미터 값이 필요한 경우)
 
 ### 1.설명
-| 키       | 데이터타입  | 설명     |
-|---------|--------|--------|
-| userid  | int    | 댓글 식별자 |
+| 키 | 데이터타입  | 설명     |
+|---|--------|--------|
+| commentid  | int    | 댓글 식별자 |
 
 ```json
-localhost:8080/schedule/{userid}
+localhost:8080/schedule/{commentid}
 ```
 
 ## c.body
@@ -1101,7 +1101,7 @@ localhost:8080/schedule/{userid}
 <!-- summary 아래 한칸 공백 두어야함 -->
 
 ## 00.개요<br>
-URL : /commentid/{commentidid}<br>
+URL : /commentids/{commentidid}<br>
 HTTP METHOD : GET<br>
 설명 : 단일 댓글 정보를 조회하는 API입니다.<br>
 
@@ -1121,7 +1121,7 @@ Content-type : application/json
 ### 1.설명
 | 키       | 데이터타입  | 설명 |
 |---------|--------|----|
-| userid  | int    | 유저 식별자 |
+| commentid  | int    | 유저 식별자 |
 
 ```json
 localhost:8080/commentid/{commentidid}
@@ -1187,7 +1187,7 @@ localhost:8080/commentid/{commentidid}
 <!-- summary 아래 한칸 공백 두어야함 -->
 
 ## 00.개요<br>
-URL : /comment<br>
+URL : /comments<br>
 HTTP METHOD : GET<br>
 설명 : 댓글 정보를 조회하는 API입니다.<br>
 
@@ -1277,7 +1277,7 @@ Content-type : application/json
 <!-- summary 아래 한칸 공백 두어야함 -->
 
 ## 00.개요<br>
-URL : /comment/{commentid}<br>
+URL : /comments/{commentid}<br>
 HTTP METHOD : DELETE<br>
 설명 : 단일 댓글 정보를 삭제하는 API 입니다. <br>
 
@@ -1297,10 +1297,10 @@ Content-type : application/json
 ### 1.설명
 | 키       | 데이터타입  | 설명 |
 |---------|--------|----|
-| userid  | int    | 유저 식별자 |
+| commentid  | int    | 유저 식별자 |
 
 ```json
-localhost:8080/schedule/{userid}
+localhost:8080/schedule/{commentid}
 ```
 
 ## c.body
