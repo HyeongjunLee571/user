@@ -1348,17 +1348,14 @@ localhost:8080/schedule/{userid}
 </details>
 
 ## ERD 1
-![ERD 1]([https://d2sqqdb3t4xrq5.cloudfront.net/upload/EmaLDtDg9vgnFssgn/SDczcWRrUWdYakNSaFNDbllfc0FYdzlaOFpxcFBtWXhCSG0ucG5n](https://postfiles.pstatic.net/MjAyNTA1MjdfMTI3/MDAxNzQ4MzI5NTc4ODUy.A8cOLpIsKAEiGP_SdOKi6_mWshd8_YCDWvNh0oHt4dMg.WC5xCNFbFq7z5LMYcORBBnODCEHgFUh4Mbt6ZVMDqXsg.PNG/%ED%95%84%EC%88%98_%EB%A0%88%EB%B2%A8_1_ERD.png?type=w966))
+![ERD 1](https://erd-cloud.s3.amazonaws.com/upload/EmaLDtDg9vgnFssgn/aHdXQzN5QVlTdEpRcml5eXBfWm1kOW1mN294aFM2aW9hcXoucG5n)
 
 ## ERD 2
-![ERD 2]([https://d2sqqdb3t4xrq5.cloudfront.net/upload/EmaLDtDg9vgnFssgn/SDczcWRrUWdYakNSaFNDbllfc0FYdzlaOFpxcFBtWXhCSG0ucG5n](https://postfiles.pstatic.net/MjAyNTA1MjdfNDUg/MDAxNzQ4MzI5NTk1Mjk0.a0jh4Hluf62h7AGK7YneqtFkaV7GLjxvVa5-X5IPlCYg.1XQ9jOP7Rt3RjYUs_Yjv9BTIjmI6NrSNtwsv2Zytx6gg.PNG/%ED%95%84%EC%88%98_%EB%A0%88%EB%B2%A8_2_ERD.png?type=w966))
+![ERD 2](https://erd-cloud.s3.amazonaws.com/upload/EmaLDtDg9vgnFssgn/SFBlNjlyZTN6bkY2b3FRRHVfWm1kOW1mN294aFM2aW9hcXoucG5n)
 
 ## ERD 3
-![ERD 3]([https://d2sqqdb3t4xrq5.cloudfront.net/upload/EmaLDtDg9vgnFssgn/SDczcWRrUWdYakNSaFNDbllfc0FYdzlaOFpxcFBtWXhCSG0ucG5n](https://postfiles.pstatic.net/MjAyNTA1MjdfMjQ2/MDAxNzQ4MzI5NjA0ODY3.E5aOBP-8n1eQBFnuDUfEPOeE2Tyw_i6TCIA6lOQ194cg.W1WnJy1Rf6mcOyU7pSI7Umlx14YXDdn5Tpvl_K2Q51Mg.PNG/%ED%95%84%EC%88%98_%EB%A0%88%EB%B2%A8_3_ERD.png?type=w966))
+![ERD 3](https://erd-cloud.s3.amazonaws.com/upload/EmaLDtDg9vgnFssgn/c0s1Z3VQeGpQR2t6YlRZS2JfWm1kOW1mN294aFM2aW9hcXoucG5n)
 
 ## ERD 7
-![ERD 7]([https://d2sqqdb3t4xrq5.cloudfront.net/upload/EmaLDtDg9vgnFssgn/SDczcWRrUWdYakNSaFNDbllfc0FYdzlaOFpxcFBtWXhCSG0ucG5n](https://postfiles.pstatic.net/MjAyNTA1MjdfMjM1/MDAxNzQ4MzI5NjE5MTAy.UZzx0MAMVuEie_qt-fXHw-TxwxkAqiGccD1VbsRHS38g.v_yA3AJqvckRL_YypQHXdpcquy0JtNn0GrZ_s5KVpiUg.PNG/%EB%8F%84%EC%A0%84_%EB%A0%88%EB%B2%A8_7_ERD.png?type=w966))
-
-## ERD 8
-![ERD 8]([https://d2sqqdb3t4xrq5.cloudfront.net/upload/EmaLDtDg9vgnFssgn/SDczcWRrUWdYakNSaFNDbllfc0FYdzlaOFpxcFBtWXhCSG0ucG5n](https://postfiles.pstatic.net/MjAyNTA1MjdfMjM2/MDAxNzQ4MzI5NjI2MTU4.h6KD5lMu-oX1SJMMEf2zo3jKuiHXS-_oJxT0m2mo7lsg.0syvjdCKw54Y1WnRTiReqs9O6j0lQ4VFx-e2JlNevKog.PNG/%EB%8F%84%EC%A0%84_%EB%A0%88%EB%B2%A8_8_ERD.png?type=w966))
+![ERD 7](https://erd-cloud.s3.amazonaws.com/upload/EmaLDtDg9vgnFssgn/enpjY21ua0dTdVdNQThEcGdfWm1kOW1mN294aFM2aW9hcXoucG5n)
 
