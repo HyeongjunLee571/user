@@ -277,7 +277,7 @@ localhost:8080/schedule/{scheduleid}
 <!-- summary 아래 한칸 공백 두어야함 -->
 
 ## 00.개요<br>
-URL : /schedules/{userid}<br>
+URL : /schedules/{schedulesid}<br>
 HTTP METHOD : GET<br>
 설명 : 단일 일정 정보를 조회하는 API입니다.<br>
 
@@ -463,7 +463,7 @@ Content-type : application/json
 <!-- summary 아래 한칸 공백 두어야함 -->
 
 ## 00.개요<br>
-URL : /schedules/{userid}<br>
+URL : /schedules/{schedulesid}<br>
 HTTP METHOD : DELETE<br>
 설명 : 단일 일정 정보를 삭제하는 API 입니다. <br>
 
@@ -941,7 +941,7 @@ localhost:8080/schedule/{userid}
 <!-- summary 아래 한칸 공백 두어야함 -->
 
 ## 00.개요<br>
-URL : /commentids<br>
+URL : /comments<br>
 HTTP METHOD : POST<br>
 설명 : 댓글를 생성하는 API 입니다.<br>
 
@@ -1017,7 +1017,7 @@ Content-type : application/json
 <!-- summary 아래 한칸 공백 두어야함 -->
 
 ## 00.개요<br>
-URL : /commentids/{commentidid}<br>
+URL : /comments/{commentsid}<br>
 HTTP METHOD : PUT<br>
 설명 : 댓글 정보를 수정하는 API입니다.<br>
 
@@ -1040,7 +1040,7 @@ Content-type : application/json
 | commentid  | int    | 댓글 식별자 |
 
 ```json
-localhost:8080/schedule/{commentid}
+localhost:8080/comments/{commentsid}
 ```
 
 ## c.body
@@ -1101,7 +1101,7 @@ localhost:8080/schedule/{commentid}
 <!-- summary 아래 한칸 공백 두어야함 -->
 
 ## 00.개요<br>
-URL : /commentids/{commentidid}<br>
+URL : /comments/{commentsid}<br>
 HTTP METHOD : GET<br>
 설명 : 단일 댓글 정보를 조회하는 API입니다.<br>
 
@@ -1119,12 +1119,12 @@ Content-type : application/json
 ## b. Param(파라미터 값이 필요한 경우)
 
 ### 1.설명
-| 키       | 데이터타입  | 설명 |
-|---------|--------|----|
-| commentid  | int    | 유저 식별자 |
+| 키       | 데이터타입  | 설명     |
+|---------|--------|--------|
+| commentid  | int    | 댓글 식별자 |
 
 ```json
-localhost:8080/commentid/{commentidid}
+localhost:8080/comments/{commentsid}
 ```
 
 ## c.body
@@ -1300,7 +1300,7 @@ Content-type : application/json
 | commentid  | int    | 유저 식별자 |
 
 ```json
-localhost:8080/schedule/{commentid}
+localhost:8080/comments/{commentid}
 ```
 
 ## c.body
