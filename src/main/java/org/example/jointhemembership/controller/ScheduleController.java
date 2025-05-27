@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.concurrent.ScheduledExecutorService;
 
 @RestController
-@RequestMapping("/Schedule")
+@RequestMapping("/Schedules")
 @RequiredArgsConstructor
 public class ScheduleController {
 
