@@ -82,7 +82,7 @@ Content-type : application/json
 ```json
 {
    "status" : "404",
-   "message" : "메모가 없습니다."
+   "message" : "일정이 없습니다."
 }
 ```
 </details>
@@ -176,7 +176,7 @@ localhost:8080/schedule/{userid}
 ```json
 {
    "status" : "404",
-   "message" : "메모가 없습니다."
+   "message" : "일정이 없습니다."
 }
 ```
 </details>
@@ -267,7 +267,7 @@ localhost:8080/schedule/{userid}
 ```json
 {
    "status" : "404",
-   "message" : "메모가 없습니다."
+   "message" : "일정이 없습니다."
 }
 ```
 </details>
@@ -357,7 +357,7 @@ localhost:8080/schedule/{userid}
 ```json
 {
    "status" : "404",
-   "message" : "메모가 없습니다."
+   "message" : "일정이 없습니다."
 }
 ```
 </details>
@@ -453,7 +453,7 @@ Content-type : application/json
 ```json
 {
    "status" : "404",
-   "message" : "메모가 없습니다."
+   "message" : "일정이 없습니다."
 }
 ```
 </details>
@@ -528,7 +528,7 @@ localhost:8080/schedule/{userid}
 ```json
 {
    "status" : "404",
-   "message" : "메모가 없습니다."
+   "message" : "일정이 없습니다."
 }
 ```
 </details>
@@ -564,28 +564,26 @@ Content-type : application/json
 | 키        | 데이터타입 | 설명    |
 |----------|-------|-------|
 | username | String | 사용자이름 |
-| useremail| String | 사용자 이메일 |
+| email    | String | 사용자 이메일 |
+| password |String | 사용자 비밀번호 |
 
 ### 2. 요청예시
 ```json
 {
    "username" : "이형준",
-   "useremail" : "xkrhd3@naver.com"
+   "email" : "xkrhd3@naver.com",
+   "password" : 1234
 }
 ```
 
 ### 3. 응답(Response)
-| 키           | 데이터타입  | 설명         |
-|-------------|--------|------------|
-| data        | Object | 핵심데이터      |
-| status      | int    | 상태코드       |
-| id          | long   | 생성된 유저 식별자 |
-| username    | String | 사용자이름      |
-| title       | String | 할일 제목      |
-| content     | String | 할일 내용      |
-| useremail     | String | 사용자 이메일   |
-| creationData |datatime| 생성날짜       |
-| creationtime |datatime| 생성시간       |
+| 키         | 데이터타입  | 설명         |
+|-----------|--------|------------|
+| data      | Object | 핵심데이터      |
+| status    | int    | 상태코드       |
+| id        | long   | 생성된 유저 식별자 |
+| username  | String | 사용자이름      |
+| email     | String | 사용자 이메일   |
 
 ### 응답 예시
 ```json
@@ -594,103 +592,7 @@ Content-type : application/json
    "data" : {
      "id": 1,
      "username": "이형준",
-     "title": "오늘도 짜증난다2",
-     "content": "사랑합니다2",
-     "useremail" : "xkrhd3@naver.com",
-     "creationData": "2025-05-21",
-     "creationtime": "19:15:54"
-   }   
-
-}
-```
-### b. 생성 실패 응답
-
-| 키       | 데이터타입  | 설명  |
-|---------|--------|-----|
-| status  | int    | 상태코드 |
-| message | String | 에러관련 메시지 |
-
-### 실패 응답 예시
-```json
-{
-   "status" : "404",
-   "message" : "유저가 없습니다."
-}
-```
-</details>
-<details>
-<summary>유저수정</summary>
-
-<!-- summary 아래 한칸 공백 두어야함 -->
-
-## 00.개요<br>
-URL : /user/{userid}<br>
-HTTP METHOD : PUT<br>
-설명 : 유저 정보를 수정하는 API입니다.<br>
-
-
-## 01.요청(Request)
-### 1.설명
-
-|key|value|
-|---|-----|
-|Content-type|application/json
-
-### 2. 예시
-Content-type : application/json
-
-## b. Param(파라미터 값이 필요한 경우)
-
-### 1.설명
-| 키       | 데이터타입  | 설명 |
-|---------|--------|----|
-| userid  | int    | 유저 식별자 |
-
-```json
-localhost:8080/schedule/{userid}
-```
-
-## c.body
-
-### 1.설명
-| 키        | 데이터타입 | 설명    |
-|----------|-------|-------|
-| username | String | 사용자이름 |
-| useremail| String | 사용자 이메일 |
-
-### 2. 요청예시
-```json
-{
-   "username" : "이형준3",
-   "useremail" : "xkrhd6@naver.com"
-}
-```
-
-### 3. 응답(Response)
-| 키           | 데이터타입  | 설명 |
-|-------------|--------|----|
-| data        | Object | 핵심데이터 |
-| status      | int    | 상태코드 |
-| id          | long   | 생성된 할일 식별자 |
-| username    | String | 사용자이름 |
-| title       | String | 할일 제목 |
-| content     | String | 할일 내용 |
-| useremail     | String | 사용자 이메일|
-| creationData |datatime| 생성날짜 |
-| creationtime |datatime| 생성시간 |
-
-### 응답 예시
-```json
-{
-   "status" : 200,
-   "data" : {
-     "id": 1,
-     "username" : "이형준3",
-     "title": "오늘도 짜증난다2",
-     "content": "사랑합니다2",
-     "useremail" : "xkrhd6@naver.com",
-     "creationData": "2025-05-21",
-     "creationtime": "19:15:54"
+     "email" : "xkrhd3@naver.com"
    }   
 
 }
@@ -745,44 +647,28 @@ localhost:8080/schedule/{userid}
 ## c.body
 
 ### 1.설명
-| 키        | 데이터타입 | 설명    |
-|----------|-------|-------|
-| useremail| String | 사용자 이메일 |
+| 키        | 데이터타입 | 설명         |
+|----------|-------|------------|
+| oldPassword| String | 사용자 기존비밀번호 |
+| newPassword| String | 사용자 변경비밀번호 |
 
 ### 2. 요청예시
 ```json
 {
-  "useremail" : "xkrhd8@naver.com"
+  "oldPassword" : 1234,
+  "newPassword" : 1111
 }
 ```
 
 ### 3. 응답(Response)
 | 키           | 데이터타입  | 설명 |
 |-------------|--------|----|
-| data        | Object | 핵심데이터 |
 | status      | int    | 상태코드 |
-| id          | long   | 생성된 할일 식별자 |
-| username    | String | 사용자이름 |
-| title       | String | 할일 제목 |
-| content     | String | 할일 내용 |
-| useremail     | String | 사용자 이메일|
-| creationData |datatime| 생성날짜 |
-| creationtime |datatime| 생성시간 |
 
 ### 응답 예시
 ```json
 {
-   "status" : 200,
-   "data" : {
-     "id": 1,
-     "username" : "이형준3",
-     "title": "오늘도 짜증난다2",
-     "content": "사랑합니다2",
-     "useremail" : "xkrhd8@naver.com",
-     "creationData": "2025-05-21",
-     "creationtime": "19:15:54"
-   }   
-
+   "status" : 200
 }
 ```
 ### b. 생성 실패 응답
@@ -796,7 +682,7 @@ localhost:8080/schedule/{userid}
 ```json
 {
    "status" : "404",
-   "message" : "메모가 없습니다."
+   "message" : "유저가 없습니다."
 }
 ```
 </details>
@@ -849,17 +735,13 @@ localhost:8080/schedule/{userid}
 ```
 
 ### 3. 응답(Response)
-| 키           | 데이터타입  | 설명         |
-|-------------|--------|------------|
-| data        | Object | 핵심데이터      |
-| status      | int    | 상태코드       |
-| id          | long   | 생성된 할일 식별자 |
-| username    | String | 사용자이름      |
-| title       | String | 할일 제목      |
-| content     | String | 할일 내용      |
-| useremail     | String | 사용자 이메일    |
-| creationData |datatime| 생성날짜       |
-| creationtime |datatime| 생성시간       |
+| 키         | 데이터타입  | 설명         |
+|-----------|--------|------------|
+| data      | Object | 핵심데이터      |
+| status    | int    | 상태코드       |
+| id        | long   | 생성된 할일 식별자 |
+| username  | String | 사용자이름      |
+| email     | String | 사용자 이메일    |
 
 ### 응답 예시
 ```json
@@ -868,11 +750,7 @@ localhost:8080/schedule/{userid}
    "data" : {
      "id": 1,
      "username" : "이형준3",
-     "title": "오늘도 짜증난다2",
-     "content": "사랑합니다2",
-     "useremail" : "xkrhd8@naver.com",
-     "creationData": "2025-05-21",
-     "creationtime": "19:15:54"
+     "email" : "xkrhd8@naver.com"
    }   
 
 }
@@ -941,17 +819,13 @@ Content-type : application/json
 ```
 
 ### 3. 응답(Response)
-| 키           | 데이터타입  | 설명 |
-|-------------|--------|----|
-| data        | Object | 핵심데이터 |
-| status      | int    | 상태코드 |
-| id          | long   | 생성된 할일 식별자 |
-| username    | String | 사용자이름 |
-| title       | String | 할일 제목 |
-| content     | String | 할일 내용 |
-| useremail     | String | 사용자 이메일    |
-| creationData |datatime| 생성날짜 |
-| creationtime |datatime| 생성시간 |
+| 키         | 데이터타입  | 설명 |
+|-----------|--------|----|
+| data      | Object | 핵심데이터 |
+| status    | int    | 상태코드 |
+| id        | long   | 생성된 할일 식별자 |
+| username  | String | 사용자이름 |
+| email     | String | 사용자 이메일 |
 
 ### 응답 예시
 ```json
@@ -960,20 +834,12 @@ Content-type : application/json
    "data" : {
    "id": 1,
    "username" : "이형준3",
-   "title": "오늘도 짜증난다2",
-   "content": "사랑합니다2",
-   "useremail" : "xkrhd8@naver.com",
-   "creationData": "2025-05-21",
-   "creationtime": "19:15:54"
+   "email" : "xkrhd8@naver.com",
    },
    {
    "id": 2,
-   "username" : "이형준3",
-   "title": "오늘도 짜증난다2",
-   "content": "사랑합니다2",
-   "useremail" : "xkrhd8@naver.com",
-   "creationData": "2025-05-21",
-   "creationtime": "19:15:54"
+   "username" : "이형준4",
+   "email" : "xkrhd7@naver.com",
    }
 ```
 ### b. 생성 실패 응답
@@ -987,7 +853,7 @@ Content-type : application/json
 ```json
 {
    "status" : "404",
-   "message" : "메모가 없습니다."
+   "message" : "유저가 없습니다."
 }
 ```
 </details>
@@ -1062,7 +928,7 @@ localhost:8080/schedule/{userid}
 ```json
 {
    "status" : "404",
-   "message" : "메모가 없습니다."
+   "message" : "유저가 없습니다."
 }
 ```
 </details>
@@ -1116,19 +982,16 @@ Content-type : application/json
 | userid       | bigint   | 생성된 유저 식별자 |
 | scheduleid           | bigint   | 생성된 일정 식별자 |
 | commentContents |String| 생성 댓글      |
-| creationData |datatime| 생성날짜       |
-| creationtime |datatime| 생성시간       |
 
 ### 응답 예시
 ```json
 {
    "status" : 200,
    "data" : {
-     "commentid" : 1,
+     "id" : 1,
      "userid": 1,
      "scheduleid" : 1,
-     "creationData": "2025-05-21",
-     "creationtime": "19:15:54"
+     "commentContents" : "스프링 어렵다...인생"
    }   
 
 }
@@ -1203,19 +1066,16 @@ localhost:8080/schedule/{userid}
 | userid       | bigint   | 생성된 유저 식별자 |
 | scheduleid           | bigint   | 생성된 일정 식별자 |
 | commentContents |String| 생성 댓글      |
-| creationData |datatime| 생성날짜       |
-| creationtime |datatime| 생성시간       |
 
 ### 응답 예시
 ```json
 {
   "status" : 200,
   "data" : {
-    "commentid" : 1,
+    "id" : 1,
     "userid": 1,
     "scheduleid" : 1,
-    "creationData": "2025-05-21",
-    "creationtime": "19:15:54"
+    "commentContents" : "스프링 어렵다...인생"
    }   
 
 }
@@ -1231,7 +1091,7 @@ localhost:8080/schedule/{userid}
 ```json
 {
    "status" : "404",
-   "message" : "유저가 없습니다."
+   "message" : "댓글이 없습니다."
 }
 ```
 </details>
@@ -1292,19 +1152,16 @@ localhost:8080/commentid/{commentidid}
 | userid       | bigint   | 생성된 유저 식별자 |
 | scheduleid           | bigint   | 생성된 일정 식별자 |
 | commentContents |String| 생성 댓글      |
-| creationData |datatime| 생성날짜       |
-| creationtime |datatime| 생성시간       |
 
 ### 응답 예시
 ```json
 {
   "status" : 200,
   "data" : {
-    "commentid" : 1,
+    "id" : 1,
     "userid": 1,
     "scheduleid" : 1,
-    "creationData": "2025-05-21",
-    "creationtime": "19:15:54"
+    "commentContents" : "스프링 어렵다...인생"
    }   
 
 }
@@ -1320,7 +1177,7 @@ localhost:8080/commentid/{commentidid}
 ```json
 {
    "status" : "404",
-   "message" : "유저가 없습니다."
+   "message" : "댓글이 없습니다."
 }
 ```
 </details>
@@ -1373,35 +1230,30 @@ Content-type : application/json
 ```
 
 ### 3. 응답(Response)
-| 키           | 데이터타입  | 설명 |
-|-------------|--------|----|
-| data        | Object | 핵심데이터 |
-| status      | int    | 상태코드 |
-| id          | long   | 생성된 할일 식별자 |
-| username    | String | 사용자이름 |
-| title       | String | 할일 제목 |
-| content     | String | 할일 내용 |
-| useremail     | String | 사용자 이메일    |
-| creationData |datatime| 생성날짜 |
-| creationtime |datatime| 생성시간 |
+| 키            | 데이터타입  | 설명         |
+|--------------|--------|------------|
+| data         | Object | 핵심데이터      |
+| status       | int    | 상태코드       |
+| id           | bigint | 일정고유 식별자   | 
+| userid       | bigint   | 생성된 유저 식별자 |
+| scheduleid           | bigint   | 생성된 일정 식별자 |
+| commentContents |String| 생성 댓글      |
 
 ### 응답 예시
 ```json
 
    "status" : 200,
    "data" : {
-   "commentid" : 1,
+   "id" : 1,
    "userid": 1,
    "scheduleid" : 1,
-   "creationData": "2025-05-21",
-   "creationtime": "19:15:54"
+   "commentContents" : "스프링 어렵다...인생"
    },
    {
-   "commentid" : 2,
+   "id" : 2,
    "userid": 2,
    "scheduleid" : 2,
-   "creationData": "2025-05-21",
-   "creationtime": "19:15:56"
+   "commentContents" : "스프링 어렵다...인생"
    }
 ```
 ### b. 생성 실패 응답
@@ -1415,7 +1267,7 @@ Content-type : application/json
 ```json
 {
    "status" : "404",
-   "message" : "메모가 없습니다."
+   "message" : "댓글이 없습니다."
 }
 ```
 </details>
@@ -1490,10 +1342,23 @@ localhost:8080/schedule/{userid}
 ```json
 {
    "status" : "404",
-   "message" : "메모가 없습니다."
+   "message" : "댓글이 없습니다."
 }
 ```
 </details>
 
-## ERD
-![ERD](https://d2sqqdb3t4xrq5.cloudfront.net/upload/EmaLDtDg9vgnFssgn/SDczcWRrUWdYakNSaFNDbllfc0FYdzlaOFpxcFBtWXhCSG0ucG5n)
+## ERD 1
+![ERD 1](https://d2sqqdb3t4xrq5.cloudfront.net/upload/EmaLDtDg9vgnFssgn/SDczcWRrUWdYakNSaFNDbllfc0FYdzlaOFpxcFBtWXhCSG0ucG5n)
+
+## ERD 2
+![ERD 2](https://d2sqqdb3t4xrq5.cloudfront.net/upload/EmaLDtDg9vgnFssgn/SDczcWRrUWdYakNSaFNDbllfc0FYdzlaOFpxcFBtWXhCSG0ucG5n)
+
+## ERD 3
+![ERD 3](https://d2sqqdb3t4xrq5.cloudfront.net/upload/EmaLDtDg9vgnFssgn/SDczcWRrUWdYakNSaFNDbllfc0FYdzlaOFpxcFBtWXhCSG0ucG5n)
+
+## ERD 7
+![ERD 7](https://d2sqqdb3t4xrq5.cloudfront.net/upload/EmaLDtDg9vgnFssgn/SDczcWRrUWdYakNSaFNDbllfc0FYdzlaOFpxcFBtWXhCSG0ucG5n)
+
+## ERD 8
+![ERD 8](https://d2sqqdb3t4xrq5.cloudfront.net/upload/EmaLDtDg9vgnFssgn/SDczcWRrUWdYakNSaFNDbllfc0FYdzlaOFpxcFBtWXhCSG0ucG5n)
+
