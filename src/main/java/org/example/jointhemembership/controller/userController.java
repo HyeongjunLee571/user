@@ -1,10 +1,7 @@
 package org.example.jointhemembership.controller;
 
 import lombok.RequiredArgsConstructor;
-import org.example.jointhemembership.DTO.UpdatePasswordRequestDto;
-import org.example.jointhemembership.DTO.UserRequestDto;
-import org.example.jointhemembership.DTO.UserResponseDto;
-import org.example.jointhemembership.DTO.UsercheckResponseDto;
+import org.example.jointhemembership.DTO.*;
 import org.example.jointhemembership.Service.Userservice;
 import org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration;
 import org.springframework.http.HttpStatus;
@@ -42,6 +39,24 @@ public class userController {
          @RequestBody UpdatePasswordRequestDto requesDto
     ){
         userService.updtePassword(id,requesDto.getOldPassword(),requesDto.getNewPassword());
+
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
+
+    @PostMapping("/long/{id}")
+    public String userlong(
+            @PathVariable Long id,
+            @RequestBody UserlongRequestDto requesDto
+    ){
+        userService.UserlongRequestDto(id,requesDto.getEmail(),requesDto.getPassword());
+
+        return "로그인완료";
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> UserDelete(@PathVariable Long id){
+
+        userService.UserDelete(id);
 
         return new ResponseEntity<>(HttpStatus.OK);
     }
