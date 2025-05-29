@@ -4,14 +4,14 @@ import jakarta.persistence.*;
 
 @Entity
 @Table(name = "comment")
-public class Comment {
+public class Comment extends BaseEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(columnDefinition = "longtext")
-    private String contents;
+    private String Comment;
 
     @ManyToOne
     @JoinColumn(name = "schedule_id")
